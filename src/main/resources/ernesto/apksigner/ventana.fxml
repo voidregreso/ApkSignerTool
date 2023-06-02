@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" prefHeight="316.0" prefWidth="916.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ernesto.apksigner.SignedController">
+        <Button layoutX="464.0" layoutY="32.0" onAction="#openKey" prefHeight="26.0" prefWidth="143.0" text="Select key configuration" wrapText="true" />
+        <Button layoutX="262.0" layoutY="215.0" onAction="#openSign" text="Get signed Apk" wrapText="true" />
+        <Button layoutX="561.0" layoutY="104.0" onAction="#openApk" text="Select Apk to be signed" wrapText="true" />
+        <Button layoutX="636.0" layoutY="215.0" onAction="#verifyStatus" text="Check APK Status" wrapText="true" />
+        <TextField fx:id="tfKey" editable="false" layoutX="99.0" layoutY="32.0" prefHeight="23.0" prefWidth="293.0" />
+        <Label layoutX="14.0" layoutY="25.0" prefHeight="38.0" prefWidth="78.0" text="Key Configuration" wrapText="true" />
+        <Label layoutX="13.0" layoutY="97.0" prefHeight="38.0" prefWidth="61.0" text="Apk to be signed" wrapText="true" />
+        <Label layoutX="14.0" layoutY="164.0" text="Signed Apk" />
+        <TextField fx:id="tfApk" editable="false" layoutX="96.0" layoutY="104.0" prefHeight="23.0" prefWidth="368.0" />
+        <TextField fx:id="tfSign" editable="false" layoutX="98.0" layoutY="160.0" prefHeight="15.0" prefWidth="384.0" />
+        <Label fx:id="tvMsg" alignment="TOP_LEFT" layoutX="20.0" layoutY="258.0" textFill="#d33737" />
+        <Label layoutX="415.0" layoutY="36.0" text="Paso 1º" />
+        <Label layoutX="500.0" layoutY="108.0" text="Paso 2º" />
+        <Label layoutX="518.0" layoutY="219.0" text="Additional" />
+        <Label layoutX="196.0" layoutY="219.0" text="Paso 4º" />
+        <Label layoutX="518.0" layoutY="164.0" text="Paso 3º" />
+        <Button layoutX="703.0" layoutY="160.0" onAction="#signOld" text="Old V1 sign" wrapText="true" />
+        <Button layoutX="566.0" layoutY="160.0" onAction="#signNew" text="New V1+V2 sign" wrapText="true" />
+        <Button layoutX="618.0" layoutY="32.0" onAction="#editKey" prefHeight="26.0" prefWidth="132.0" text="Edit key configuration" wrapText="true" />
+        <Button layoutX="759.0" layoutY="30.0" onAction="#refreshKey" prefHeight="47.0" prefWidth="134.0" text="After editing, refresh the key configuration" wrapText="true" />
+</AnchorPane>
